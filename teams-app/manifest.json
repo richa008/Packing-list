@@ -1,0 +1,54 @@
+{
+    "$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
+    "version": "1.1.3",
+    "manifestVersion": "devPreview",
+    "id": "25407c29-8335-48a3-bfdb-4384580a1857",
+    "packageName": "",
+    "name": {
+      "short": "Packing List",
+      "full": "Packing List"
+    },
+    "developer": {
+      "name": "Microsoft Corporation",
+      "websiteUrl": "https://www.microsoft.com",
+      "privacyUrl": "https://packing-list.azurewebsites.net/privacy.html",
+      "termsOfUseUrl": "https://packing-list.azurewebsites.net/tou.html"
+    },
+    "description": {
+      "short": "Packing list app",
+      "full": "Test app to test static tabs flow"
+    },
+    "icons": {
+      "outline": "outline.png",
+      "color": "color.png"
+    },
+    "accentColor": "#eff9fc",
+    "staticTabs": [
+      {
+        "entityId": "54d496e0-2b51-4210-bf7d-21d0b5821d9c",
+        "name": "Packing List",
+        "contentUrl": "https://packing-list.azurewebsites.net",
+        "websiteUrl": "https://packing-list.azurewebsites.net",
+        "scopes": [
+          "personal",
+          "team",
+          "groupchat"
+        ],
+        "context": [
+          "channelTab",
+          "personalTab",
+          "meetingSidePanel",
+          "meetingChatTab",
+          "meetingStage",
+          "privateChatTab"
+        ]
+      }
+    ],
+    "validDomains": [
+      "packing-list.azurewebsites.net"
+    ],
+    "webApplicationInfo": {
+      "id": "25407c29-8335-48a3-bfdb-4384580a1857"
+    },
+    "showLoadingIndicator": true
+  }
