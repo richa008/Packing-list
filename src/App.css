@@ -1,25 +1,51 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
 .header {
- background-color: #464EB8;
- color: white;
- padding-bottom: 10px;
+  background-color: #6264a7;
+  color: white;
+  border-bottom: solid 1px #204d74;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.category-panel {
+.packing-list {
+  float: left;
   text-align: left;
-  padding: 0;
-  margin-top: 0px;
+  padding: 0px;
 }
 
-.panel-default>.category-header {
-  color:#7B83EB;
-  margin-top: 0px;
+.container {
+  padding: 0px;
+}
+
+.packing-list-category {
+  color: #464775;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6264a7;
+  font-family: cursive, sans-serif;
+  margin-bottom: 0px;
+}
+
+.reset-btn {
+  color: white;
+  background-color: #6264a7;
+}
+
+.page-head {
+  text-align: right;
+  padding-right: 20px;
 }
 
 label {
+  font-weight: 545;
   padding-left: 10px;
+  font-size: medium;
+  display: inline;
 }
-

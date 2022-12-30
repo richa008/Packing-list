@@ -4,16 +4,21 @@ import { PackingListCategoryItem } from "./packing-list.interface";
 export const fetchPackingListData = (): PackingListCategoryItem[] => {
     const basicsCategory: PackingListCategoryItem = {
             key: "basics",
-            categoryName: "Basics",
+            categoryName: "Essentials",
             packingListItems: [
                 {
                     key: "wallet",
-                    itemName: "Wallet",
+                    itemName: "Wallet (Cash + credit cards)",
                     isSelected: false
                 },
                 {
                     key: "idcard",
                     itemName: "ID card",
+                    isSelected: false
+                },
+                {
+                    key: "keys",
+                    itemName: "Keys",
                     isSelected: false
                 },
                 {
@@ -26,13 +31,32 @@ export const fetchPackingListData = (): PackingListCategoryItem[] => {
                     itemName: "Laptop + charger",
                     isSelected: false
                 },
-
+                {
+                    key: "headphones",
+                    itemName: "Airpods/ Headphones",
+                    isSelected: false
+                },
+                {
+                    key: "snacks",
+                    itemName: "Snacks",
+                    isSelected: false
+                },
+                {
+                    key: "water",
+                    itemName: "Water bottle",
+                    isSelected: false
+                },
+                {
+                    key: "sunglasses",
+                    itemName: "Sunglasses",
+                    isSelected: false
+                },
             ]
         }
 
         const apparel: PackingListCategoryItem = {
             key: "apparel",
-            categoryName: "Apparel",
+            categoryName: "Clothes and shoes",
             packingListItems: [
                 {
                     key: "innerwear",
@@ -41,12 +65,17 @@ export const fetchPackingListData = (): PackingListCategoryItem[] => {
                 },
                 {
                     key: "outerwear",
-                    itemName: "Outerwear/Jacket/Sweater",
+                    itemName: "Outerwear/ Jacket/ Sweater",
                     isSelected: false
                 },
                 {
                     key: "bottoms",
-                    itemName: "Jeans/Pants/Shorts/Skirts",
+                    itemName: "Jeans/ Pants/ Shorts/ Skirts",
+                    isSelected: false
+                },
+                {
+                    key: "formals",
+                    itemName: "Formals/ Dresses",
                     isSelected: false
                 },
                 {
@@ -69,7 +98,11 @@ export const fetchPackingListData = (): PackingListCategoryItem[] => {
                     itemName: "Shoes + socks",
                     isSelected: false
                 },
-
+                {
+                    key: "sandals",
+                    itemName: "Sandals/ flip flops",
+                    isSelected: false
+                },
             ]
         }
 
@@ -104,7 +137,7 @@ export const fetchPackingListData = (): PackingListCategoryItem[] => {
                 },
                 {
                     key: "hairgel",
-                    itemName: "Hair gel/hair cream",
+                    itemName: "Hair gel/ hair cream",
                     isSelected: false
                 },
                 {
@@ -112,12 +145,17 @@ export const fetchPackingListData = (): PackingListCategoryItem[] => {
                     itemName: "Sunscreen",
                     isSelected: false
                 },
+                {
+                    key: "contacts",
+                    itemName: "Contact lenses + contact lens solution",
+                    isSelected: false
+                },
             ]
         }
 
         const baby: PackingListCategoryItem = {
             key: "baby",
-            categoryName: "Baby",
+            categoryName: "Baby/Kids",
             packingListItems: [
                 {
                     key: "clothes",
@@ -151,31 +189,14 @@ export const fetchPackingListData = (): PackingListCategoryItem[] => {
                 },
                 {
                     key: "medicines",
-                    itemName: "Medicines + first aid kit",
-                    isSelected: false
-                },
-            ]
-        }
-
-        const misc: PackingListCategoryItem = {
-            key: "misc",
-            categoryName: "Misellaneous",
-            packingListItems: [
-                {
-                    key: "sunglasses",
-                    itemName: "Sunglasses",
+                    itemName: "Medicines",
                     isSelected: false
                 },
                 {
-                    key: "snacks",
-                    itemName: "Snacks",
+                    key: "first aid",
+                    itemName: "First aid kit",
                     isSelected: false
                 },
-                {
-                    key: "contacts",
-                    itemName: "Contact lenses",
-                    isSelected: false
-                }
             ]
         }
 
@@ -183,8 +204,7 @@ export const fetchPackingListData = (): PackingListCategoryItem[] => {
         basicsCategory,
         apparel,
         personalCare,
-        baby,
-        misc
+        baby
     ]
 
     return list;
