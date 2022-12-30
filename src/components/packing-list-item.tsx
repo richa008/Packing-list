@@ -21,6 +21,7 @@ export const PackingListItem = (props: PackingListCategoryProps) => {
                                 type='checkbox'
                                 id={listItem.key}
                                 label={listItem.itemName}
+                                checked={listItem.isSelected}
                             />
                         </ListGroup.Item>
                     </Fragment>
